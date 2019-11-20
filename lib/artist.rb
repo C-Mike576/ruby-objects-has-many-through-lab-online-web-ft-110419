@@ -21,7 +21,8 @@ class Artist
   end
   
   def genres
-    songs.find {|x| x.genre}
+    songs.each do |x|
+      p x.genre
   end
   
 end
