@@ -1,5 +1,6 @@
 class Genre 
   attr_accessor :name
+  attr_reader :artist
   
   @@all = []
   
@@ -12,7 +13,9 @@ class Genre
     @@all
   end
   
-  
+  def artist=(artist_obj)
+    @artist = artist_obj
+  end
   
 end
   
