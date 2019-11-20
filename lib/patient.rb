@@ -17,7 +17,7 @@ class Patient
   end
   
   def doctors
-    appointments.find {|x| x.doctor}
+    appointments.collect {|x| x.doctor.name}
   end
   
   def new_appointment(date, doctor)
