@@ -21,7 +21,7 @@ class Artist
   end
   
   def genres
-    Genre.all.select { |x| x.artist == self}
+    songs.select {|x| x.genre}.uniq
   end
   
 end
