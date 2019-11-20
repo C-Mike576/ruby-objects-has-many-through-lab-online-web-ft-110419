@@ -1,6 +1,5 @@
 class Genre 
   attr_accessor :name
-  attr_reader :song, :artists
   
   @@all = []
   
@@ -8,5 +7,7 @@ class Genre
     @name = name
     @@all << self
   end
+  
+  
   
   
