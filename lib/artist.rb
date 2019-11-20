@@ -21,7 +21,7 @@ class Artist
   end
   
   def genres
-    songs.select {|x| x.genre.name}
+    songs.select {|x| p x.genre.name}
   end
   
 end
