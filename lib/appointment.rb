@@ -19,4 +19,8 @@ class Appointment
     @patient = pat_obj
   end
   
+  def self.all
+    @@all
+  end
+  
 end
