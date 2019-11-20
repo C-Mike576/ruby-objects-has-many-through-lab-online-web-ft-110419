@@ -1,4 +1,22 @@
 class Song 
-  attr_accessor :title
+  attr_accessor :name
+  attr_reader :artist, :genre
   
-  def initialize(title)
+  @@all = []
+  
+  def initialize(name, artist, genre)
+    @name = name
+    @artist = artist
+    @genre = genre
+    @@all << self
+  end
+  
+  def artist=(artist_obj)
+    @artist = artist_obj
+  end
+  
+  def genre=(genre_obj)
+    @genre = genre_obj
+  end
+  
+end
