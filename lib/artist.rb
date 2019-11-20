@@ -23,6 +23,7 @@ class Artist
   def genres
     songs.each do |x|
       p x.genre
+    end
   end
   
 end
