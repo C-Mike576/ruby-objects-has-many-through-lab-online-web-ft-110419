@@ -12,7 +12,8 @@ class Doctor
     @@all
   end
   
-  
+  def new_appointment
+    
   
   
   
