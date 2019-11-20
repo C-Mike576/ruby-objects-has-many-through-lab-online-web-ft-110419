@@ -21,9 +21,7 @@ class Artist
   end
   
   def genres
-    songs.each do |x|
-      p x.genre
-    end
+    songs.select {|x| x.genre.name}
   end
   
 end
