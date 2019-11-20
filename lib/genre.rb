@@ -1,6 +1,5 @@
 class Genre 
   attr_accessor :name
-  attr_reader :artist, :songs
   
   @@all = []
   
@@ -20,6 +19,10 @@ class Genre
   def songs
     Songs.all.select {|x| x.genre == self}
   end
+  
+  def artists
+    songs.select {|x| x.
+      
   
 end
   
