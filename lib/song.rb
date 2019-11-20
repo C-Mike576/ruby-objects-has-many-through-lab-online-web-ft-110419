@@ -19,4 +19,8 @@ class Song
     @genre = genre_obj
   end
   
+  def self.all
+    @@all
+  end
+  
 end
